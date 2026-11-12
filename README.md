@@ -1,4 +1,4 @@
-# foray_robots
+# diesel_robots
 
 > **R** · owner 角色：集成
 
@@ -13,9 +13,9 @@
 > 本仓处于**初始化状态**，尚无源码。以下流程随 P0/P1 落地逐步可用。
 
 ```bash
-# 1. 拉取（仓齐备后改为从元仓 foray_ws 一键拉取）
-git clone git@github.com:ZQU-Foray/foray_robots.git
-cd foray_robots
+# 1. 拉取（仓齐备后改为从元仓 diesel_ws 一键拉取）
+git clone git@github.com:ZQU-Foray/diesel_robots.git
+cd diesel_robots
 
 # 2. 依赖安装
 rosdep install -y -r --from-paths . --ignore-src --rosdistro humble
@@ -90,7 +90,7 @@ config/<robot_type>.yaml    ← 兵种 + 场景差异（sentry / standard3；sim
 
 
 
-1. 硬件拓扑 —— `foray_platform` 的 HAL 抽象接口 + 可替换驱动
+1. 硬件拓扑 —— `diesel_platform` 的 HAL 抽象接口 + 可替换驱动
 
 2. 传感器配置 —— 驱动插件 + 参数系统
 
@@ -118,14 +118,14 @@ config/<robot_type>.yaml    ← 兵种 + 场景差异（sentry / standard3；sim
 
 
 
-用 **Git LFS** 管理（PCD 可达数十 MB）。成熟后拆出 `foray_field`。
+用 **Git LFS** 管理（PCD 可达数十 MB）。成熟后拆出 `diesel_field`。
 
 ## 上下游
 
 | 方向 | 对象 |
 |---|---|
-| **上游**（本仓依赖谁） | `foray_interfaces` · `foray_platform` · `foray_localization` · `foray_vision` · `foray_auto_aim` · `foray_navigation` · `foray_decision` |
-| **下游**（谁依赖本仓） | `foray_ws` |
+| **上游**（本仓依赖谁） | `diesel_interfaces` · `diesel_platform` · `diesel_localization` · `diesel_vision` · `diesel_auto_aim` · `diesel_navigation` · `diesel_decision` |
+| **下游**（谁依赖本仓） | `diesel_ws` |
 
 ## 参考
 
