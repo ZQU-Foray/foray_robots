@@ -124,7 +124,7 @@ config/<robot_type>.yaml    ← 兵种 + 场景差异（sentry / standard3；sim
 
 | 方向 | 对象 |
 |---|---|
-| **上游**（本仓依赖谁） | `diesel_interfaces` · `diesel_platform` · `diesel_localization` · `diesel_vision` · `diesel_auto_aim` · `diesel_navigation` · `diesel_decision` |
+| **上游**（本仓依赖谁） | `diesel_interfaces` · `diesel_platform` · `diesel_localization` · `diesel_vision_frontend` · `diesel_vision_backend` · `diesel_navigation` · `diesel_decision` |
 | **下游**（谁依赖本仓） | `diesel_ws` |
 
 ## 参考
