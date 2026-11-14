@@ -38,3 +38,8 @@ Commit: （首次提交）
 - [ ] 本仓能独立 `colcon build`（无代码时跳过）
 - [ ] CI 绿灯
 - [ ] 每个新增模块带独立可执行测试
+
+## 2026-11-14
+
+- README 上游依赖表随视觉前后端分家改名（`diesel_vision_frontend` / `diesel_vision_backend`）；
+  装配根与 `package.xml` 待接口冻结后再落。
